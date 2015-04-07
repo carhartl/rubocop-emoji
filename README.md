@@ -1,7 +1,7 @@
 # Rubocop::Emoji
 
 This formatter display green hearts for files with no offenses and
-red hearts for files with problems in the them. In the end it
+broken red hearts for files with problems in them. In the end it
 appends the regular report data in the clang style format.
 
 ## Installation
