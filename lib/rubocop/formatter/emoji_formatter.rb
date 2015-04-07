@@ -9,7 +9,7 @@ module RuboCop
     class EmojiFormatter < ProgressFormatter
       def report_file_as_mark(offenses)
         mark = if offenses.empty?
-                 "\u{1f49a}"
+                 "\u{1f49a} "
                else
                  highest_offense = offenses.max_by(&:severity)
                  colored_severity_code(highest_offense)
