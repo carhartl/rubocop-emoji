@@ -1,10 +1,9 @@
 require "rubocop"
-require "rubocop/formatter/progress_formatter"
 
 module RuboCop
   module Formatter
     # This formatter display green hearts for files with no offenses and
-    # letters for files with problems in the them. In the end it
+    # red hearts for files with problems in the them. In the end it
     # appends the regular report data in the clang style format.
     class EmojiFormatter < ProgressFormatter
       def report_file_as_mark(offenses)
